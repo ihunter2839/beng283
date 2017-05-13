@@ -1,0 +1,17 @@
+To run the script:
+
+python q3.py [candidate proteins file] [MS data.mgf file]
+
+Script creates file idealSpectrums.txt that contains the 
+m/z values of the ideal spectrums generated for the two 
+candidate peptides within the tolerated mass accuracy range. 
+
+Output of script:
+Parent mass: [mass of precursor ion]
+
+[Candidate peptide]
+[0123456789] = sum of (m/z * normed intensity value) for all m/z values
+    explained by ideal spectrum
+[0123456789] = sum of explained m/z values
+[0123456789] = sum of explained normed intensity values
+[0123456789] = # explained m/z values / total # m/z values
